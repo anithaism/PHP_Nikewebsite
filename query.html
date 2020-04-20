@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title> Supplier ID Query </title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<h2>Supplier ID based search</h2>
+
+<div class="topnav">
+  <a href="display.php">Display</a>
+  <a href="newpurchase.html">New Purchase</a>
+  <a class="active" href="query.html">Supplier Query</a>
+  <a href="delete.php">Delete Purchase</a>
+  <a href="alter.php">Alter Quantity</a>
+</div>
+
+<div class="pageContainer centerText">
+
+<form method="post" action="query.php" class="formLayout">
+
+<div class="formGroup">
+     <label>Enter Supplier ID:</label>
+     <input type="text" name="qsid" class="textbox" required  
+                      placeholder="Supplier ID" maxlength="4" pattern="[S|s][0-9][0-9][0-9]" />
+</div>
+
+
+<div class="formGroup">
+        <label></label>
+        <button type="submit" id="qbtnSubmit" name="qbtnSubmit" value="Submit">Search</button><br><br>
+</div>
+
+
+</form>
+</div>
+
+
+</body>
+</html>

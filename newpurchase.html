@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title> New Purchase Form </title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<h2>Enter New Purchase Details</h2>
+
+<div class="topnav">
+  <a href="display.php">Display</a>
+  <a class="active" href="newpurchase.html">New Purchase</a>
+  <a href="query.html">Supplier Query</a>
+  <a href="delete.php">Delete Purchase</a>
+  <a href="alter.php">Alter Quantity</a>
+</div>
+
+<div class="pageContainer centerText">
+
+<form method="post" action="display.php" class="formLayout">
+
+<div class="formGroup">
+    <label>Purchase No:</label>
+    <input type="text" name="pno" class="textbox" required placeholder="Purchase Number" maxlength="10" pattern="[P|p][0-9]+" autofocus />
+</div>
+
+<div class="formGroup">
+     <label>Supplier ID:</label>
+     <input type="text" name="sid" class="textbox" required  
+                      placeholder="Supplier ID" maxlength="4" pattern="[S|s][0-9][0-9][0-9]" />
+</div>
+
+<div class="formGroup">
+      <label>Date:</label>
+      <input type="date" name="date" class="textbox"  required 
+                      placeholder="yyyy/mm/dd" />
+</div>
+
+<div class="formGroup">
+       <label>Quantity:</label>
+       <input type="number" name="quantity" class="textbox" required 
+                      placeholder="quantity" pattern="[0-9]+" />
+</div>
+
+<div class="formGroup">
+        <label>Description:</label>
+        <input type="text" name="desc" class="textbox" required 
+                      placeholder="Description" maxlength="100" pattern=".+" />
+</div>
+
+<div class="formGroup">
+         <label>Unit Price: </label>
+         <input type="number" name="price" class="textbox" required 
+                      placeholder="Price" maxlength="5" step="any" />
+</div>
+
+<div class="formGroup">
+        <label></label>
+
+        <button type="submit" id="btnSubmit" name="btnSubmit" value="Submit">Submit form</button><br><br>
+
+</div>
+
+
+</form>
+</div>
+
+
+</body>
+</html>
